@@ -1,0 +1,181 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+  }
+  
+  h1, h2, h3 {
+    color: #6a0dad; /* Purple color */
+  }
+  
+  h2 {
+    margin-top: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Container for the whole page */
+  .lecture-plan-container {
+    padding: 20px;
+    margin-top: 20px;
+    padding-top: 60px;
+    overflow-x: hidden;
+  }
+  
+  /* Header */
+  .lecture-plan-header {
+    text-align: center;
+    color: purple;
+    margin-bottom: 20px;
+  }
+  
+  /* Lecture Plan Content Box */
+  .lecture-plan-box {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    min-height: 200px;
+    max-height: 50vh;
+    overflow-y: auto;
+  }
+  
+  /* Duration and Generate Buttons */
+  .duration-container {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .duration-container input {
+    padding: 5px;
+    margin-right: 10px;
+    width: 80px;
+  }
+  
+  .generate-btn {
+    padding: 10px 20px;
+    background-color: purple;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .generate-btn:hover {
+    background-color: #550a8a; /* Darker purple on hover */
+  }
+  
+  /* Edit and Save Buttons */
+  .edit-save-btn-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .edit-btn,
+  .save-btn,
+  .cancel-btn {
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .edit-btn {
+    background-color: orange;
+  }
+  
+  .edit-btn:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+  }
+  
+  .save-btn {
+    background-color: green;
+  }
+  
+  .cancel-btn {
+    background-color: gray;
+  }
+  
+  /* Back to Dashboard Button */
+  .back-to-dashboard-btn {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .back-to-dashboard-btn button {
+    padding: 10px 20px;
+    background-color: purple;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Generate Quiz and Notes Buttons */
+  .generate-quiz-btn,
+  .generate-notes-btn,
+  .upload-video-btn {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .generate-quiz-btn button,
+  .generate-notes-btn button,
+  .upload-video-btn button {
+    padding: 10px 20px;
+    background-color: purple;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .generate-quiz-btn button:hover,
+  .generate-notes-btn button:hover,
+  .upload-video-btn button:hover {
+    background-color: #550a8a; /* Darker purple on hover */
+  }
+  
+  /* Error Message */
+  .error-message {
+    text-align: center;
+    color: red;
+  }
+  
+  /* Loading State */
+  .loading-message {
+    text-align: center;
+  }
+
+  /* Add to your LecturePlan.css file */
+@media print {
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+    page-break-inside: avoid;
+  }
+  
+  p, ul, ol {
+    page-break-inside: avoid;
+  }
+  
+  img, table {
+    page-break-inside: avoid;
+    page-break-before: auto;
+  }
+}
+  

@@ -1,0 +1,99 @@
+/* Remove any default padding and margin */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+  }
+  
+  /* Navbar container */
+  .navbar {
+    width: 100%;
+    position: fixed; /* Fixed at the top */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #6f42c1; /* Set the navbar background color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add some shadow for separation */
+    padding: 0.5rem 1rem; /* Adjust padding for dynamic height */
+    transition: padding 0.3s ease; /* Smooth transition for height adjustment */
+  }
+  
+  /* Adjust navbar height based on screen size */
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 0.75rem 1.5rem; /* Adjust for mobile view */
+    }
+  }
+  
+  /* Navbar content */
+  .navbar .container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .navbar .navbar-brand {
+    color: white;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding-right: 10px; /* Space between logo and links */
+  }
+  
+  .navbar .navbar-brand img {
+    margin-right: 0.5rem; /* Space between logo and text */
+  }
+  
+  /* Navbar links */
+  .navbar .navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Add some space between items */
+  }
+  
+  .navbar .nav-link {
+    color: white;
+    font-size: 1.1rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar .nav-link:hover {
+    color: #ffd700; /* Hover effect for links */
+  }
+  
+  /* Adjust navbar links when screen size is small */
+  @media (max-width: 768px) {
+    .navbar .container-fluid {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar .navbar-nav {
+      flex-direction: column;
+      gap: 0.5rem;
+      width: 100%; /* Make the navbar links full width */
+    }
+  
+    .navbar .navbar-nav .nav-link {
+      padding: 10px; /* Adjust padding for mobile links */
+      width: 100%; /* Make the links take full width */
+      text-align: left; /* Align text to the left on mobile */
+    }
+  }
+  
+  /* Optional: Add padding to the body to prevent content from hiding behind the fixed navbar */
+  body {
+    padding-top: 80px; /* Adjust according to the height of the navbar */
+  }
+  
+  
